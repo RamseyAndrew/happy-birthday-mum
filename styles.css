@@ -63,4 +63,20 @@ body {
     color: #880e4f;
     font-size: 0.9em;
   }
+  .card-generator {
+    margin-top: 40px;
+  }
+  
+  .birthday-card {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff3e0;
+    border: 2px dashed #ff6f00;
+    border-radius: 15px;
+    color: #6d4c41;
+    font-size: 1.2em;
+    box-shadow: 0 0 10px #ffcc80;
+    transition: transform 0.3s ease-in-out;
+  }
+  
   

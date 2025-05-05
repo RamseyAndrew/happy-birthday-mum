@@ -39,4 +39,21 @@ document.getElementById('confettiButton').addEventListener('click', () => {
     }
   `;
   document.head.appendChild(style);
+  function generateCard() {
+    const messages = [
+      "Happy 44th, Mum! Your love makes life brighter every day 💖",
+      "To the queen of our family – may your day be as beautiful as you are 👑",
+      "You shine brighter than all 44 candles on your cake ✨",
+      "Age is just a number, and you wear 44 like a superstar! 🌟",
+      "Wishing you love, laughter, and endless hugs today and always 💐",
+      "You are cherished more than words can say. Happy birthday, Mum 💕"
+    ];
+    
+    const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+    const card = document.getElementById('card');
+    card.innerHTML = randomMessage;
+    card.style.transform = 'scale(1.05)';
+    setTimeout(() => card.style.transform = 'scale(1)', 150);
+  }
+  
   
