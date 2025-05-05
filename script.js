@@ -39,42 +39,4 @@ document.getElementById('confettiButton').addEventListener('click', () => {
     }
   `;
   document.head.appendChild(style);
-  function generateCard() {
-    const messages = [
-      "Happy 44th, Mum! Your love makes life brighter every day 💖",
-      "To the queen of our family – may your day be as beautiful as you are 👑",
-      "You shine brighter than all 44 candles on your cake ✨",
-      "Age is just a number, and you wear 44 like a superstar! 🌟",
-      "Wishing you love, laughter, and endless hugs today and always 💐",
-      "You are cherished more than words can say. Happy birthday, Mum 💕"
-    ];
-    
-    const randomMessage = messages[Math.floor(Math.random() * messages.length)];
-    const card = document.getElementById('card');
-    card.innerHTML = randomMessage;
-    card.style.transform = 'scale(1.05)';
-    setTimeout(() => card.style.transform = 'scale(1)', 150);
-  }
-  function updateMothersDayCountdown() {
-    const mothersDay = new Date("May 11, 2025 00:00:00");
-    const now = new Date();
-    const diff = mothersDay - now;
-  
-    if (diff <= 0) {
-      document.getElementById("mothers-day-timer").textContent = "💐 It's Mother’s Day today!";
-      return;
-    }
-  
-    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-    const minutes = Math.floor((diff / (1000 * 60)) % 60);
-    const seconds = Math.floor((diff / 1000) % 60);
-  
-    document.getElementById("mothers-day-timer").textContent =
-      `${days}d ${hours}h ${minutes}m ${seconds}s left until Mother’s Day! 🌸`;
-  }
-  
-  setInterval(updateMothersDayCountdown, 1000);
-  updateMothersDayCountdown();
-    
   
