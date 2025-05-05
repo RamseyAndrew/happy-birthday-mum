@@ -73,6 +73,30 @@ body {
     box-shadow: 0 0 10px #ffcc80;
     transition: transform 0.3s ease-in-out;
   }
+  .mother-day-countdown {
+    margin-top: 40px;
+    padding: 15px;
+    background-color: #fff3e0;
+    border-left: 6px solid #ff9800;
+    border-radius: 12px;
+    color: #d32f2f;
+    font-size: 1.2em;
+  }
+  
+  button {
+    margin-top: 20px;
+    background-color: #ff7043;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ff5722;
+  }
+  
   footer {
     position: absolute;
     bottom: 20px;
