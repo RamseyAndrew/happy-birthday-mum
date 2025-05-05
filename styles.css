@@ -57,12 +57,7 @@ body {
     z-index: 10;
   }
   
-  footer {
-    position: absolute;
-    bottom: 20px;
-    color: #880e4f;
-    font-size: 0.9em;
-  }
+ 
   .card-generator {
     margin-top: 40px;
   }
@@ -77,6 +72,12 @@ body {
     font-size: 1.2em;
     box-shadow: 0 0 10px #ffcc80;
     transition: transform 0.3s ease-in-out;
+  }
+  footer {
+    position: absolute;
+    bottom: 20px;
+    color: #880e4f;
+    font-size: 0.9em;
   }
   
   
